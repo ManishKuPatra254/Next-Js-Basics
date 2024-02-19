@@ -15,17 +15,6 @@ export default function LoginRoute() {
     const handleContactUs = async (e) => {
         e.preventDefault();
 
-        // if (
-        //     !formData.name ||
-        //     !formData.email ||
-        //     !formData.phone ||
-        //     !formData.service ||
-        //     !formData.message
-        // ) {
-        //     alert("Please fill all required fields");
-        //     return;
-        // }
-
         setLoading(true);
         try {
             const response = await contactUs(formData);
